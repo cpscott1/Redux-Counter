@@ -21,12 +21,12 @@ class Counter extends Component {
             <p>
                 Clicked: {this.props.count} times
                 <button onClick={() => {
-                  store.dispatch(increment())
+                  this.props.increment()
                  }}>
                     +
                 </button>
                 <button onClick={() => {
-                  store.dispatch(decrement())
+                 this.props.decrement()
                 }}>
                     -
                 </button>
