@@ -1,6 +1,6 @@
 export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
-
+const { createStore, combineReducers} = Redux;
 // Our action creators will return
 // an action packet that our reducer will
 // receive. What does the action packet look like?
@@ -10,9 +10,15 @@ export const DECREMENT = 'DECREMENT';
 // is left to the reducer(s).
 
 export const increment = () => {
-  // Fill in this function
+  return {
+    type: INCREMENT,
+    payload: 'plus'
+  }
 };
 
 export const decrement = () => {
-  // Fill in this function
+  return {
+    type: DECREMENT,
+    payload: 'minus'
+  }
 };
